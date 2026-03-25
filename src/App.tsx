@@ -302,24 +302,6 @@ function Home() {
         </div>
       </section>
 
-      {/* 3D Video Section */}
-      {data.videoUrl && (
-        <section className="py-12 bg-bg-soft">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className="serif text-3xl text-primary mb-8 text-center">3D Okul Tanıtım Turu</h2>
-            <div className="aspect-video rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
-              <iframe
-                src={data.videoUrl}
-                className="w-full h-full"
-                title="3D Okul Tanıtım Turu"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Hero Section (Original - Hidden or replaced by slider) */}
       {/* Keeping the structure but the slider is the main hero now */}
 

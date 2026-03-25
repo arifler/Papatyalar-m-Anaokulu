@@ -378,18 +378,6 @@ export default function Admin() {
                   />
                   <p className="text-[10px] text-primary/30 ml-2 italic">"Programı İndir" butonuna tıklandığında açılacak olan bağlantı.</p>
                 </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-widest text-primary/40 ml-2">3D Okul Tanıtım Videosu Linki</label>
-                  <input 
-                    type="text" 
-                    value={content.videoUrl || ''}
-                    onChange={(e) => setContent({...content, videoUrl: e.target.value})}
-                    className="w-full bg-bg-soft border-2 border-transparent focus:border-accent rounded-2xl p-4 outline-none transition-all"
-                    placeholder="https://www.youtube.com/embed/..."
-                  />
-                  <p className="text-[10px] text-primary/30 ml-2 italic">Slaytın altında görünecek 3D tanıtım videosunun linki (YouTube embed linki önerilir).</p>
-                </div>
               </div>
             </section>
 
