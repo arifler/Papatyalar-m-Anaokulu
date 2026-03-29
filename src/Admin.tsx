@@ -108,7 +108,7 @@ export default function Admin() {
           education: {
             title: "Karakterimiz Papatya Gibi Saf",
             description: "Değerler eğitimi programımızla, çocuklarımızın içindeki iyiliği ve güzelliği besliyoruz.",
-            items: ["Dürüstlük ve Güven", "Doğa Sevgisi", "Paylaşma Kültürü", "Nezaket Kuralları"],
+            items: ["Dürüstlük ve Güven", "Doğa Sevgisi", "Paylaşma Kültürü", "Nezaket Kuralları", "Sorumluluk Bilinci", "Yardımlaşma"],
             imageUrl1: "https://picsum.photos/seed/kids-playground-fun/500/700",
             imageUrl2: "https://picsum.photos/seed/kids-reading-group/500/700"
           },
@@ -557,6 +557,16 @@ export default function Admin() {
                     value={content.education.description} 
                     onChange={(e) => setContent({...content, education: {...content.education, description: e.target.value}})}
                     className="w-full bg-bg-soft border-2 border-transparent focus:border-accent rounded-2xl p-4 outline-none transition-all resize-none"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-black uppercase tracking-widest text-primary/40 mb-2 block">Maddeler (Her satıra bir madde)</label>
+                  <textarea 
+                    rows={6}
+                    value={content.education.items?.join('\n')} 
+                    onChange={(e) => setContent({...content, education: {...content.education, items: e.target.value.split('\n')}})}
+                    className="w-full bg-bg-soft border-2 border-transparent focus:border-accent rounded-2xl p-4 outline-none transition-all resize-none"
+                    placeholder="Dürüstlük ve Güven&#10;Doğa Sevgisi..."
                   />
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">

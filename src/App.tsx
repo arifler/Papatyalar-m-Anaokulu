@@ -141,7 +141,7 @@ function Home() {
     education: {
       title: "Karakterimiz Papatya Gibi Saf",
       description: "Değerler eğitimi programımızla, çocuklarımızın içindeki iyiliği ve güzelliği besliyoruz.",
-      items: ["Dürüstlük ve Güven", "Doğa Sevgisi", "Paylaşma Kültürü", "Nezaket Kuralları"],
+      items: ["Dürüstlük ve Güven", "Doğa Sevgisi", "Paylaşma Kültürü", "Nezaket Kuralları", "Sorumluluk Bilinci", "Yardımlaşma"],
       imageUrl1: "https://picsum.photos/seed/kids-playground-fun/500/700",
       imageUrl2: "https://picsum.photos/seed/kids-reading-group/500/700"
     },
